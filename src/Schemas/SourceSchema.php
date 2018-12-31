@@ -16,10 +16,10 @@ class SourceSchema extends Schema
     {
         return [
             Attributes\IdAttribute::make(),
-            Attributes\TextAttribute::make('name')
-                ->setRequired(true)
-                ->setUnique(true),
-            Attributes\LongTextAttribute::make('description'),
+            Attributes\TextAttribute::make('vendor')
+                ->setRequired(true),
+            Attributes\TextAttribute::make('uid'),
+            Attributes\UrlAttribute::make('url'),
             Attributes\CreatedAtAttribute::make(),
             Attributes\UpdatedAtAttribute::make(),
             Attributes\DeletedAtAttribute::make(),

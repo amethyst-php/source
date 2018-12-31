@@ -14,8 +14,9 @@ class CreateSourcesTable extends Migration
     {
         Schema::create(Config::get('amethyst.amethyst-source.data.source.table'), function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name')->unique();
-            $table->text('description')->nullable();
+            $table->string('vendor');
+            $table->string('uid')->nullable();
+            $table->string('url')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

@@ -16,8 +16,9 @@ class SourceFaker extends Faker
         $faker = Factory::create();
 
         $bag = new Bag();
-        $bag->set('name', $faker->name);
-        $bag->set('description', $faker->text);
+        $bag->set('vendor', $faker->name);
+        $bag->set('uid', md5(microtime()));
+        $bag->set('url', 'https://github.com');
 
         return $bag;
     }
