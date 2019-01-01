@@ -4,6 +4,6 @@ namespace Railken\Amethyst\Providers;
 
 use Railken\Amethyst\Common\CommonServiceProvider;
 
-class AmethystSourceServiceProvider extends CommonServiceProvider
+class SourceServiceProvider extends CommonServiceProvider
 {
 }

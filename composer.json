@@ -28,7 +28,7 @@
         },
         "laravel": {
             "providers": [
-                "Railken\\Amethyst\\Providers\\AmethystSourceServiceProvider"
+                "Railken\\Amethyst\\Providers\\SourceServiceProvider"
             ]
         }
     }
