@@ -23,7 +23,7 @@
     },
     "extra": {
         "amethyst": {
-            "package": "amethyst-source",
+            "package": "source",
             "namespace": "Railken\\Amethyst"
         },
         "laravel": {
