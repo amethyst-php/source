@@ -17,6 +17,7 @@ class CreateSourcesTable extends Migration
             $table->string('vendor');
             $table->string('uid')->nullable();
             $table->string('url')->nullable();
+            $table->integer('weight')->default(0);
             $table->timestamps();
             $table->softDeletes();
         });

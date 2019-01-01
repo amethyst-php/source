@@ -20,6 +20,7 @@ class SourceSchema extends Schema
                 ->setRequired(true),
             Attributes\TextAttribute::make('uid'),
             Attributes\UrlAttribute::make('url'),
+            Attributes\NumberAttribute::make('weight'),
             Attributes\CreatedAtAttribute::make(),
             Attributes\UpdatedAtAttribute::make(),
             Attributes\DeletedAtAttribute::make(),

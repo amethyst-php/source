@@ -19,6 +19,7 @@ class SourceFaker extends Faker
         $bag->set('vendor', $faker->name);
         $bag->set('uid', md5(microtime()));
         $bag->set('url', 'https://github.com');
+        $bag->set('weight', 20);
 
         return $bag;
     }
