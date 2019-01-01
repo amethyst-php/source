@@ -4,6 +4,8 @@
 
 [Amethyst](https://github.com/railken/amethyst) package.
 
+The source of information. It can be used to save the origin of whatever information (news, books, etc.. )
+
 # Requirements
 
 PHP 7.1 and later.
