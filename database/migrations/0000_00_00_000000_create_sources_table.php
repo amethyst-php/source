@@ -12,7 +12,7 @@ class CreateSourcesTable extends Migration
      */
     public function up()
     {
-        Schema::create(Config::get('amethyst.amethyst-source.data.source.table'), function (Blueprint $table) {
+        Schema::create(Config::get('amethyst.source.data.source.table'), function (Blueprint $table) {
             $table->increments('id');
             $table->string('vendor');
             $table->string('uid')->nullable();
@@ -27,6 +27,6 @@ class CreateSourcesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists(Config::get('amethyst.amethyst-source.data.source.table'));
+        Schema::dropIfExists(Config::get('amethyst.source.data.source.table'));
     }
 }

@@ -18,7 +18,7 @@ class Source extends Model implements EntityContract
      */
     public function __construct(array $attributes = [])
     {
-        $this->ini('amethyst.amethyst-source.data.source');
+        $this->ini('amethyst.source.data.source');
         parent::__construct($attributes);
     }
 }

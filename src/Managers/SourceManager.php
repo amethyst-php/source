@@ -12,5 +12,5 @@ class SourceManager extends Manager
     /**
      * @var string
      */
-    protected $config = 'amethyst.amethyst-source.data.source';
+    protected $config = 'amethyst.source.data.source';
 }
