@@ -21,4 +21,12 @@ class Source extends Model implements EntityContract
         $this->ini('amethyst.source.data.source');
         parent::__construct($attributes);
     }
+
+    /**
+     * Get all of the owning sourceable models.
+     */
+    public function sourceable()
+    {
+        return $this->morphTo();
+    }
 }

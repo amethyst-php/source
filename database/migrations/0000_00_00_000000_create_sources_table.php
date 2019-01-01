@@ -18,6 +18,8 @@ class CreateSourcesTable extends Migration
             $table->string('uid')->nullable();
             $table->string('url')->nullable();
             $table->integer('weight')->default(0);
+            $table->string('sourceable_type');
+            $table->integer('sourceable_id');
             $table->timestamps();
             $table->softDeletes();
         });
