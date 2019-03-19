@@ -3,6 +3,7 @@
 namespace Railken\Amethyst\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Railken\Amethyst\Common\ConfigurableModel;
 use Railken\Lem\Contracts\EntityContract;
@@ -25,7 +26,7 @@ class Source extends Model implements EntityContract
     /**
      * Get all of the owning sourceable models.
      */
-    public function sourceable()
+    public function sourceable(): MorphTo
     {
         return $this->morphTo();
     }
