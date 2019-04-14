@@ -20,7 +20,7 @@ class SourceFaker extends Faker
         $bag->set('uid', md5(microtime()));
         $bag->set('url', 'https://github.com');
         $bag->set('weight', 20);
-        $bag->set('sourceable_type', \Railken\Amethyst\Models\Foo::class);
+        $bag->set('sourceable_type', 'foo');
         $bag->set('sourceable', FooFaker::make()->parameters()->toArray());
 
         return $bag;

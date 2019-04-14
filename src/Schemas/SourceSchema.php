@@ -22,12 +22,12 @@ class SourceSchema extends Schema
             Attributes\TextAttribute::make('uid'),
             Attributes\UrlAttribute::make('url'),
             Attributes\NumberAttribute::make('weight'),
-            Attributes\EnumAttribute::make('sourceable_type', array_keys(Config::get('amethyst.source.data.source.sourceables')))
+            Attributes\EnumAttribute::make('sourceable_type', app('amethyst')->getMorphListable('source', 'sourceable'))
                 ->setRequired(true),
             Attributes\MorphToAttribute::make('sourceable_id')
                 ->setRelationKey('sourceable_type')
                 ->setRelationName('sourceable')
-                ->setRelations(Config::get('amethyst.source.data.source.sourceables'))
+                ->setRelations(app('amethyst')->getMorphRelationable('source', 'sourceable'))
                 ->setRequired(true),
             Attributes\CreatedAtAttribute::make(),
             Attributes\UpdatedAtAttribute::make(),
