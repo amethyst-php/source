@@ -14,7 +14,7 @@ class SourceServiceProvider extends CommonServiceProvider
     {
         parent::register();
     }
-    
+
     /**
      * @inherit
      */
