@@ -1,8 +1,8 @@
 # amethyst-source
 
-[![Build Status](https://travis-ci.org/railken/amethyst-source.svg?branch=master)](https://travis-ci.org/railken/amethyst-source)
+[![Build Status](https://travis-ci.org/amethyst-php/source.svg?branch=master)](https://travis-ci.org/amethyst-php/source)
 
-[Amethyst](https://github.com/railken/amethyst) package.
+[Amethyst](https://github.com/amethyst-php/amethyst) package.
 
 The source of information. It can be used to save the origin of whatever information (news, books, etc.. )
 
@@ -15,7 +15,7 @@ PHP 7.1 and later.
 You can install it via [Composer](https://getcomposer.org/) by typing the following command:
 
 ```bash
-composer require railken/amethyst-source
+composer require amethyst/source
 ```
 
 The package will automatically register itself.

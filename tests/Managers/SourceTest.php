@@ -1,10 +1,10 @@
 <?php
 
-namespace Railken\Amethyst\Tests\Managers;
+namespace Amethyst\Tests\Managers;
 
-use Railken\Amethyst\Fakers\SourceFaker;
-use Railken\Amethyst\Managers\SourceManager;
-use Railken\Amethyst\Tests\BaseTest;
+use Amethyst\Fakers\SourceFaker;
+use Amethyst\Managers\SourceManager;
+use Amethyst\Tests\BaseTest;
 use Railken\Lem\Support\Testing\TestableBaseTrait;
 
 class SourceTest extends BaseTest
