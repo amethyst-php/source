@@ -21,7 +21,7 @@ class SourceSchema extends Schema
             Attributes\TextAttribute::make('uid'),
             Attributes\UrlAttribute::make('url'),
             Attributes\NumberAttribute::make('weight'),
-            Attributes\EnumAttribute::make('sourceable_type', app('amethyst')->getDataNames())
+            \Amethyst\Core\Attributes\DataNameAttribute::make('sourceable_type')
                 ->setRequired(true),
             Attributes\MorphToAttribute::make('sourceable_id')
                 ->setRelationKey('sourceable_type')
